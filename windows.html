@@ -115,12 +115,12 @@ opacity: 0;
         window.onload = () => {
             requestFullScreen(document.body);
 
-            let x = Math.floor(Math.random() * 100);
-            document.getElementById('percentage').innerText = x;
+            let x = 0;
+            document.getElementById('percentage').innerText = Math.floor(Math.random() * 20);
             setInterval(() => {
                 x += 1;
                 document.getElementById('percentage').innerText = x;
-                if (x == 100) x = Math.floor(Math.random() * 100);
+                if (x == 100) x = Math.floor(Math.random() * 20);
             }, 3000);
         }
     </script>
